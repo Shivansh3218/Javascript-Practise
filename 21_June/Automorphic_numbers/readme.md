@@ -1,3 +1,3 @@
 # Screenshot of output
 
-# <img src ="Output.png" >
+# <img src ="Outpiut.png" >
