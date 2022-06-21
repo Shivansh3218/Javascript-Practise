@@ -1,3 +1,7 @@
+// USE OF SWITCH CASE TO LOG THE DAY BY GIVING AN INTEGER VALUE
+
+
+
 let s = parseInt(process.argv[2])
 switch (s){
     case 1:
