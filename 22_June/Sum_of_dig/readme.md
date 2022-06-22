@@ -1,3 +1,3 @@
 # Output Screenshot
 
-<img src = "Outpu.pn">
+<img src = "Outpu.png">
