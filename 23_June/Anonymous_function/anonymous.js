@@ -6,3 +6,14 @@ let abc = function (a,b){// function defined with no name and stored in a variab
 }
 console.log(abc(10,15))// Calling a function
 
+//CONSTRUCTION OF IIFE FUNCTION(Immediately Invoked function expression)
+let abc = (function abc(n){
+    let sum =0
+        while(n>0){
+            let dig = n%10
+            sum= sum+dig**2
+            n = Math.floor(n/10)
+        }
+        return sum
+})(49);
+console.log(abc)
