@@ -1,5 +1,5 @@
 for(let i =1; i<=4;i++){// Here i defines number of rows 
-    let empty =' ' // adding empty string is compulsory
+    let empty =' ' 
     for (let j =1;j<=5;j++){// This defines how many columns are there 
         empty = empty+ j // this is adding j to make columns 
         // console.log(empty)    

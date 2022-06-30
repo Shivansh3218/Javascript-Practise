@@ -1,8 +1,10 @@
+let c= 0;
 function fibo(first,second,count){
-    if(count<10){
-        let c= first + second;
-        return fibo(second,c,count+1);
+    if(count<=5){
+        c = first + second;
+        fibo(second,c,count+1);
+        return c
     }
-    console.log(first);
+    console.log(c)
 }
-fibo(1,1,1);
+(fibo(1,1,1));
