@@ -6,6 +6,6 @@ let a = nums.length
 nums.splice(2,2, "shiv")
 // console.log(nums)
 
-cnums.slice(2,2)
+nums.slice(2,2)
 
 
