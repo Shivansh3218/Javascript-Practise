@@ -1,6 +1,5 @@
-  // console.log(arr[i])
-  for(let j=i+1;i<arr.length;j++){
-    if(arr[i]==arr[j]) 
-   check+=1 
-     }
-//   console.log(check)
+let arr =[2,3,4,1,5]
+// let b = arr.slice(2,2+1)
+let b = arr.splice(2,2)
+console.log(b)
+console.log(arr)
