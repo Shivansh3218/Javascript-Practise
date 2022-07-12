@@ -6,25 +6,28 @@ let sum = Array.isArray(arr)
 let pro = null
 let abc = {
     name : "Shiv", age :22, status: "High"
-}
- let shiva = function (a,b){
-    let sum = a+b
-    return sum
 
 }
+
+console.log(arr.length())
+//  let shiva = function (a,b){
+//     let sum = a+b
+//     return sum
+
+// }
     
-shiva(5,20)
+// shiva(5,20)
 
 
 
-console.log(Array.isArray(arr)) //Returns Boolean value
+// console.log(Array.isArray(arr)) //Returns Boolean value
 
-console.log(typeof(arr))
-console.log(typeof(num))
-console.log(typeof(name))
-console.log(typeof(arm))
-console.log(typeof(sum))
-console.log(typeof(pro))
-console.log(typeof(abc))
-console.log(typeof(shiva))
-console.log(abc['age'])
+// console.log(typeof(arr))
+// console.log(typeof(num))
+// console.log(typeof(name))
+// console.log(typeof(arm))
+// console.log(typeof(sum))
+// console.log(typeof(pro))
+// console.log(typeof(abc))
+// console.log(typeof(shiva))
+// console.log(abc['age'])
