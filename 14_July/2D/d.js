@@ -7,6 +7,7 @@ let arr = [
 ];
 for(let i = 0; i < arr.length; i++){
     // for(let j = 0; j <i ; j++){
-        console.log(arr[i][i]);
+        console.log(arr[i][i]);  //TO PRINT THE DIAGNOAL PATTERN NUMBERS OF ARRAY
+        
 }
 // }
