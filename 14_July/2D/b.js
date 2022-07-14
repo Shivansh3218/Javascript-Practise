@@ -7,4 +7,6 @@ for(let i = 0; i < arr.length; i++){
     for(let j = 0; j <=i ; j++){
         console.log(arr[i][j]);
 }
+
+//TO PRINT THE TRIANGLE PATTERN NUMBERS OF ARRAY
 }
