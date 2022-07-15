@@ -21,3 +21,4 @@ while (start <= end) {
         end = middle - 1
     }
 }
+console.log("Hello world")
