@@ -14,5 +14,5 @@ console.log(arr[i][arr.length-1]);
 for(let i = arr.length-2; i >=0; i--) // For Bottom line of square
 console.log(arr[arr.length-1][i]);
 
-for(let i = arr.length-2; i > 0; i--)
+for(let i = arr.length-2; i > 0; i--) //For final 0th line of square in reverse order
 console.log(arr[i][0]);
