@@ -5,7 +5,7 @@ function xyz(input){
     abc(input)
 }
 (xyz("Shivansh is a special Person"))
-abc("Pratibha is doing M.Sc")
+// abc("Pratibha is doing M.Sc")
 
 
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8]
