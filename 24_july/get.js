@@ -2,7 +2,7 @@ let person = {
     fname : "Jhon",
     lname: "Dylon",
   get fullname(){
-    return `${person.fname} ${person.lname}`
+    return (`${person.fname} ${person.lname}`).toUpperCase()
   }
 ,
 set fullname(newname){
@@ -12,5 +12,5 @@ set fullname(newname){
 
 }
 }
-person.fullname = "Shivansh Rawat"
+person.fullname = "Shivansh "
 console.log(person.fullname)
