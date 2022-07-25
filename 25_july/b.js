@@ -15,7 +15,18 @@ let [name , age , city] = Person
 
 let nested = [ "Prti", "microbiology", [ "No ", "Yes"]]
 
-let  [Id, dept , [Married , working]]= nested
+// let  [Id, dept , [Married , working]]= nested
 
 // console.log(working)
 
+// Destructuring by using a function
+
+function fun(){
+// console.log(Id)
+// console.log(dept)
+return (["Subee", "Biochem"])
+}
+
+let [id, department] =fun()
+
+console.log(department)
