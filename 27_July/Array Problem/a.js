@@ -6,7 +6,7 @@ let end = arr.length
     for (let j = 0; j < end; j++) {
         if (arr[j] > arr[j + 1]) {
             // If the condition is true then swap them
-            var temp = arr[j]
+            var temp = arr[j] //Temp variable for swapping the values 
             arr[j] = arr[j + 1]
             arr[j + 1] = temp
             end-- //Here reducing the array .length value since we are arranging in a reverse order
