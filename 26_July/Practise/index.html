@@ -7,18 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-
-    <button style="font-size: 100px; color: aquamarine;">Hello</button>
+ <!-- <h1>Hello</h1> -->
+    <button class="button" style="font-size: 100px; color: aquamarine;">Hello</button>
  
     <div class="first">
         <img style="display: none;height: 100vh" src="https://images.unsplash.com/photo-1658731044736-15a51d721fce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60" alt="Not Found">
     </div>
 <script>
-    let el = document.getElementsByTagName("h1")
-    let div = document.getElementsByClassName("first")
-    el.addEventListener("click",hover)
+    let element = document.getElementsByClassName("button")
+    let div = document.querysec("first")
+    element.addEventListener("click",hover)
    function hover(){
-   element.style.display = "block";
+//    div.style.display = "block";
+console.log("Hello World!");
    }
 </script>
 
