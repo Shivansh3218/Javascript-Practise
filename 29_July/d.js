@@ -9,7 +9,7 @@ while (start <=end) {
     if (target == arr[mid]) {
     //   console.log("found at ", mid)  
     flag = true
-      return 
+    //   return "found"
         start = start + 1
         end = mid - 1
     }
