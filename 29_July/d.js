@@ -1,12 +1,14 @@
 // Binary Search Program
-let arr = [1, 4, 2, 1, 45, 3566, 523, 233]
-let target = 45
+let arr = [1, 2,5,6]
+let target = 5
 let start = 0
-let end = arr[arr.length - 1]
+let flag = false
+let end = arr.length - 1
 while (start <=end) {
-    let mid = Math.ceil(start + end  / 2)
+    let mid = Math.floor((start + end)/ 2)
     if (target == arr[mid]) {
-      console.log("found at ", mid)  
+    //   console.log("found at ", mid)  
+    flag = true
       return 
         start = start + 1
         end = mid - 1
@@ -18,5 +20,6 @@ else if(target <arr[mid]){
     end = mid-1
 }
 }
-return console.log("Not found")
 
+if(flag == true) console.log("found ")
+else console.log("not found ")
