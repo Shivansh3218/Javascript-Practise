@@ -1,0 +1,23 @@
+input{
+    width : 300px;
+    margin: 15px;
+}
+
+.heading{
+    display: flex;
+}
+.name, .email, .phone{
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: aqua;
+}
+.action{
+background-color: aquamarine;
+width: 100px;
+margin-top: 10px;
+height: 20px;
+padding: 10px;
+text-align: center;
+}
