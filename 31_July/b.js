@@ -1,6 +1,6 @@
 // Sorting of  array
 
-let str = [2,1,3,56]
+var str = [213,45345,213,31,13,231,312]
 for(let i=0;i<str.length;i++){
  for(let j=i+1;j<str.length;j++){
         if(str[i]>str[j]){
@@ -10,4 +10,5 @@ for(let i=0;i<str.length;i++){
     }
 }
 }
+
 console.log(str)
