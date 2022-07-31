@@ -1,0 +1,1 @@
+addEventListener("click", ()=>{console.log("click")} , {capture:true})
