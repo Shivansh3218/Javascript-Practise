@@ -11,4 +11,4 @@ obj.fun()
 
 //  let [num1,num2, ...rest] =arr
 
-console.log(0.1+0.2)
+console.log(0.1+0.2==0.3)
