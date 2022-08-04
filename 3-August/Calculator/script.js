@@ -19,7 +19,17 @@ buttons.map((btn) => {
     }else{
 
         display.innerText = display.innerText+key
+    
     }
 
       })
+     
 })
+// let element = document.createElement("div")
+
+// element.style.width = "20px"
+// element.style.color = "black"
+// element.style.backgroundColor = "red"
+// element.innerText = "Hello Shivansh "
+// element.append("Hello Shivansh")
+// document.body.section.append(element)
