@@ -1,6 +1,6 @@
 let momPromise = new Promise ((resolve, reject)=>{
     setTimeout(()=>{
-        resolve = ("Collected all of gold");
+        // resolve = ("Collected all of gold");
         reject = ("Killed by Adheera");
     },1000);
 });
