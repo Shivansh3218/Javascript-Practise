@@ -1,9 +1,9 @@
 //The same program using Promise
 
-let userleft = false  //What user is doing now
-let userWatching = true
-function watching(){
-    return new Promise((resolve, reject) => {
+let userleft = true  //What user is doing now
+let userWatching = false
+function watching(){   // Total work inside a function
+    return new Promise((resolve, reject) => { // Promise if user left or still watching
         if(userleft){
             reject({
                 name: "User left",
@@ -15,7 +15,7 @@ function watching(){
                 name : "user watching screen",
                 message : "I'm happy"
             })
-        }else{
+        }else{  //Triggered if both reject conditions are not matched as user watching is true and user left is true
             resolve ("The program was a success")
         }
     })
