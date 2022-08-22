@@ -21,8 +21,9 @@ function watching(){   // Total work inside a function
     })
 } 
 
-watching().then((message)=>{
+watching().then((message)=>{ //Then is only used for success ful program run
     console.log("sucess:"+ message)
-}).catch((error)=>{
+}).catch((error)=>{    //Catch is used to find the error in code output
+    
     console.log(error.name + " "+ error.message)
 })
