@@ -10,6 +10,16 @@
     <input type="text" value="chicken">
     <button class="submit">submit</button>
     <div class="container" style="width: 300px;height:300px;"></div>
+    <!-- <div class="main">
+        <div class="left">
+            <h1>${strMeal}</h1>
+            <div class="right">
+                <img src="${strMealthumb}" style="width: 200px;height: 150px;" alt="">
+            </div>
+            <p>${strInstructions}</p>
+            <a href="${stryoutube}">link for full preparation</a>
+        </div> -->
+    </div>
 </body>
 </html>
 <script>
@@ -21,10 +31,24 @@
  .then(response=>response.json() )
  .then(data=>{
     let  result = data["meals"]
-    console.log(result)
-    result.map(function(res){
-        container.innerHTML += `<h1>${res.strMeal}</h1>`
-    })
+    // console.log(result)
+    // result.map(function(res){
+    //     container.innerHTML += `<h1>${res.strMeal}</h1>`
+    // })
+    result.forEach(element => {
+        let {strMeal, strthumb,strInstruction,strYoutube}= element
+
+        let html = `   <div class="main">
+        <div class="left">
+            <h1>${strMeal}</h1>
+            <div class="right">
+                <img src="${strMealthumb}" style="width: 200px;height: 150px;" alt="">
+            </div>
+            <p>${strInstructions}</p>
+            <a href="${stryoutube}">link for full preparation</a>
+        </div>`
+    });
+    
  })
     })
 </script>
