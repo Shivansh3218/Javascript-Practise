@@ -31,10 +31,10 @@
  .then(response=>response.json() )
  .then(data=>{
     let  result = data["meals"]
-    // console.log(result)
-    // result.map(function(res){
-    //     container.innerHTML += `<h1>${res.strMeal}</h1>`
-    // })
+    console.log(result)
+    result.map(function(res){
+        container.innerHTML += `<h1>${res.strMeal}</h1>`
+    })
     result.forEach(element => {
         let {strMeal, strthumb,strInstruction,strYoutube}= element
 
