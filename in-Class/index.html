@@ -30,15 +30,14 @@
  fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input.value}`)
  .then(response=>response.json() )
  .then(data=>{
-    let  result = data["meals"]
-    console.log(result)
-    result.map(function(res){
-        container.innerHTML += `<h1>${res.strMeal}</h1>`
-    })
-    result.forEach(element => {
+    console.log(data)
+    // data["meals"].forEach(element => { 
+    // });(function(res){
+    //     container.innerHTML += `<h1>${res.strMeal}</h1>`
+    // })
+    data["meals"].forEach(element => {
         let {strMeal, strthumb,strInstruction,strYoutube}= element
-
-        let html = `   <div class="main">
+        let html = ` <div class="main">
         <div class="left">
             <h1>${strMeal}</h1>
             <div class="right">
@@ -48,7 +47,6 @@
             <a href="${stryoutube}">link for full preparation</a>
         </div>`
     });
-    
  })
     })
 </script>
