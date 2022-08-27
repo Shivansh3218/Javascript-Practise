@@ -31,22 +31,23 @@
  .then(response=>response.json() )
  .then(data=>{
     console.log(data)
-    // data["meals"].forEach(element => { 
-    // });(function(res){
-    //     container.innerHTML += `<h1>${res.strMeal}</h1>`
-    // })
-    data["meals"].forEach(element => {
-        let {strMeal, strthumb,strInstruction,strYoutube}= element
+    let recipie = data["meals"]
+    console.log(recipie)
+
+    recipie.forEach(element => { 
+        let {strMeal, strMealThumb,strInstructions,strYoutube}= element
         let html = ` <div class="main">
         <div class="left">
             <h1>${strMeal}</h1>
             <div class="right">
-                <img src="${strMealthumb}" style="width: 200px;height: 150px;" alt="">
+                <img src="${strMealThumb}" style="width: 200px;height: 150px;" alt="">
             </div>
             <p>${strInstructions}</p>
-            <a href="${stryoutube}">link for full preparation</a>
+            <a href="${strYoutube}">link for full preparation</a>
         </div>`
+        container.innerHTML += html
     });
+});
  })
-    })
+
 </script>
