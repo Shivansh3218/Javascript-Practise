@@ -22,7 +22,7 @@
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input.value}`)
    .then(res=>res.json())
    .then(data=>{
-    // console.log(data);
+    console.log(data);
     for(let i =0; i<data["meals"].length; i++){
         let data1=data["meals"][i]
         let data2=`<div class"main">
