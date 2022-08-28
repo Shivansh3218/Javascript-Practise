@@ -15,7 +15,26 @@
     </div>
 </body>
 
+<script>
+    let btn = document.querySelector("button")
+    let bar = document.querySelector("#int")
+    let cnt = document.querySelector("#cnt")
+    let container  = document.getElementsByClassName("container")[0]
 
+    btn.addEventListener("click", function(){
+        fetch(` https://api.openweathermap.org/data/2.5/weather?q=${bar.value}&appid=285169a77b4b11fe763ee96515ecbdc5`)
+        .then(response=>response.json())
+        .then(data=>{
+            let result = ` <div class="name"><h1>${bar.value}</h1></div>
+            <div class="weather"><h1>${data["weather"][0].main}</h1></div>
+            `
+            container.innerHTML = result
+        })
+        
+        .catch(err => alert("Not Valid"))
+    })
+   
+</script>
 
 </html>
 
