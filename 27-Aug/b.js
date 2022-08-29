@@ -1,10 +1,12 @@
+
+//CURRING FUNCTION
+
 function add(a){
 return (b)=>{
     if(b){
         console.log(a)
         return add(a+b)
     }
-   
     return a
 }
 }
