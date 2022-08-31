@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
+
 <body>
+    <style>
+        .card {
+            width: 50%;
+            height: 30%;
+            background-color: grey;
+           
+        }
+        .card:hover{
+            -webkit-animation: name 5s;
+        }
+
+        .lower {
+            background-color: rgb(159, 255, 205);
+            height: 30%;
+        }
+
+        @-webkit-keyframes name{
+            30%{
+                transform: rotate(40deg);
+            }
+            50%{
+                transform: scale(1.2);
+            }
+        }
+    </style>
     <div class="card">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facere accusantium quisquam aliquam ea suscipit maiores. Atque saepe, cupiditate, accusamus delectus voluptate hic exercitationem illum dolor illo repellendus pariatur dolores.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facere accusantium quisquam aliquam ea
+            suscipit maiores. Atque saepe, cupiditate, accusamus delectus voluptate hic exercitationem illum dolor illo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, labore necessitatibus? Nihil veniam dicta, recusandae iste cupiditate dolor, at tenetur quisquam dignissimos ducimus aliquam minus officia dolores aliquid quae nesciunt.
+            repellendus pariatur dolores.</p>
         <div class="lower">
-            <img src="A.jpg" alt="">
+            <img style="width: 20%; height: 30%;" src="A.jpg" alt="">
+
         </div>
     </div>
 </body>
+
 </html>
