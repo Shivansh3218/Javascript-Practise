@@ -18,22 +18,31 @@
 
         .card {
             background-color: rgb(255, 218, 218);
-            height: 100%;
-            height: 15rem;
-          
+            height: auto;
+            padding: 5px;
+            border-radius: 17px 17px 0 0;
         }
 
         .wrapper {
             width: 50%;
             height: 20%;
+            display: inline-block;
             border: 3px solid blue;
-            padding: 5px;
             border-radius: 20px;
+            /* overflow: hidden; */
+            /* padding: 5px; */
             -webkit-animation: name 4s;
+            margin-top: 5rem;
+        }
+
+        .wrapper:hover {
+            -webkit-animation: java 3s;
         }
 
         .card:hover {
+            border-radius: 20px;
             -webkit-animation: name 5s;
+            
         }
 
         .lower {
@@ -41,13 +50,14 @@
             display: flex;
             flex-direction: row;
             gap: 2rem;
-           
+            border-radius:  0 0 17px 17px;
         }
 
         img {
             width: 100px;
             height: 100px;
             border-radius: 60%;
+            border: 3px solid rgb(255, 255, 255);
         }
 
         img:hover {
@@ -55,6 +65,7 @@
         }
 
         .lower:hover {
+            border-radius: 20px;
             -webkit-animation: java 4s;
         }
 
