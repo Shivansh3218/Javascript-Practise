@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+}
+.container{
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+h4{
+   height: 100px;
+   color: rgb(0, 0, 0);
+   background-color: black;
+
+
+}
+.best-seller-div {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border-radius: 30px;
+}
+
+.best-seller-image {
+    width: 13rem;
+    background-color: antiquewhite;
+    height: 8rem;
+    border-radius: 20px 20px 0 0;
+}
+
+.inside-best-seller {
+    background-color: rgb(255, 255, 255);
+    width: 13rem;
+    border-radius: 30px;
+    height: auto;
+    line-height: 0;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+    color: maroon;
+}
