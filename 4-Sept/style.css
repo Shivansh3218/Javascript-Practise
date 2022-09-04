@@ -1,6 +1,15 @@
 body{
     background-color: black;
 }
+.heading-of-best-seller{
+ color: aliceblue;
+ text-align: center;
+}
+.best-seller-wrapper-div{
+    display: block;
+    position: relative;
+    width: auto;
+}
 
 .container1 {
     display: flex;
@@ -182,14 +191,13 @@ h5 {
     margin-left:-130px ;
     position: absolute;
     top: 8px;
-    animation: 3s ease-in 1s infinite reverse both running slidein;
 }
 
 
 .change-carousel-button-best-seller{
 position: absolute;
 right: 0%;
-top: 40%;
+top: 230px;
 z-index: 100;
 width: 50px;
 height: 40px;
