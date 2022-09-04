@@ -20,6 +20,24 @@ h4{
     flex-direction: column;
     background-color: antiquewhite;
     border-radius: 30px;
+    position: relative;
+}
+
+.flash{
+    width: 50px;
+    font-size: small;
+    height: 15px;
+    padding: 2px;
+    background-color: rgb(69, 227, 255);
+    position: absolute;
+    border-radius:0  7px 7px 0;
+    top: 15px;
+    text-align: right;
+}
+
+
+.hello{
+    background-color: red;
 }
 
 .best-seller-image {
