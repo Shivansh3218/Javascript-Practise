@@ -2,7 +2,7 @@ body {
     background-color: black;
 }
 
-.heading-of-best-seller {
+.heading-of-best-seller,.heading-of-daily-deals {
     color: aliceblue;
     text-align: center;
 }
@@ -56,11 +56,11 @@ h4 {
 }
 
 .flash {
-    width: 50px;
+    width: 40px;
     font-size: small;
     height: 15px;
     padding: 2px;
-    background-color: rgb(227, 255, 69);
+    background-color: rgb(255, 255, 69);
     position: absolute;
     z-index: 10;
     border-radius: 0 7px 7px 0;

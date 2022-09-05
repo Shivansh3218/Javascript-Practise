@@ -10,26 +10,26 @@ let container1ofBestSeller2 = document.querySelector(".container4")
 changeCarouselBtn.addEventListener("click", () => {
     container2ofBestSeller.classList.toggle("visible")
     container1ofBestSeller.classList.toggle("visible")
-    changeCarouselBtn.style.display ="none"
-    changeCarouselBtn2.style.display ="inline-block"
+    changeCarouselBtn.style.display = "none"
+    changeCarouselBtn2.style.display = "inline-block"
 
 })
 changeCarouselBtn2.addEventListener("click", () => {
     container2ofBestSeller.classList.toggle("visible")
     container1ofBestSeller.classList.toggle("visible")
-    changeCarouselBtn.style.display ="inline-block"
-    changeCarouselBtn2.style.display ="none"
+    changeCarouselBtn.style.display = "inline-block"
+    changeCarouselBtn2.style.display = "none"
 })
 
 changeCarouselBtn3.addEventListener("click", () => {
     container1ofBestSeller1.classList.toggle("visible")
     container1ofBestSeller2.classList.toggle("visible")
-    changeCarouselBtn3.style.display ="none"
-    changeCarouselBtn4.style.display ="inline-block"
+    changeCarouselBtn3.style.display = "none"
+    changeCarouselBtn4.style.display = "inline-block"
 })
 changeCarouselBtn4.addEventListener("click", () => {
     container1ofBestSeller1.classList.toggle("visible")
     container1ofBestSeller2.classList.toggle("visible")
-    changeCarouselBtn3.style.display ="inline-block"
-    changeCarouselBtn4.style.display ="none"
+    changeCarouselBtn3.style.display = "inline-block"
+    changeCarouselBtn4.style.display = "none"
 })
