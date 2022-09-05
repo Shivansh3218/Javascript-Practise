@@ -1,29 +1,38 @@
-body{
+body {
     background-color: black;
 }
-.heading-of-best-seller{
- color: aliceblue;
- text-align: center;
-}
-.best-seller-wrapper-div{
-    display: block;
-    position: relative;
-    width: auto;
+
+.heading-of-best-seller {
+    color: aliceblue;
+    text-align: center;
 }
 
-.container1 {
+.best-seller-wrapper-div {
+    position: relative;
+    width: auto;
+    height: 30rem;
+    margin-left: 250px;
+}
+
+.container1, .container3 {
     display: flex;
-    gap: 5px;
+    gap: 20px;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
     height: auto;
     justify-content: space-around;
-    margin-left:-130px ;
-    position: absolute;
-    top: 8px;
-    animation: 3s ease-in 1s infinite reverse both running slidein;
-
+    margin-left: -130px;
+}
+.container2,.container4 {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    justify-content: space-around;
+    margin-left: -130px;
 }
 
 h4 {
@@ -34,9 +43,9 @@ h4 {
 
 }
 
-#redstar{
-color: red;
-background-color: red;
+#redstar {
+    color: red;
+    background-color: red;
 }
 
 .best-seller-div {
@@ -51,14 +60,15 @@ background-color: red;
     font-size: small;
     height: 15px;
     padding: 2px;
-    background-color: rgb(69, 227, 255);
+    background-color: rgb(227, 255, 69);
     position: absolute;
     z-index: 10;
     border-radius: 0 7px 7px 0;
     top: 15px;
     text-align: right;
 }
-.red{
+
+.red {
     background-color: red;
     color: white;
     width: 110px;
@@ -67,7 +77,7 @@ background-color: red;
 
 }
 
-.white{
+.white {
     background-color: aliceblue;
     width: 90px;
     color: red;
@@ -81,18 +91,25 @@ background-color: red;
 .wrapper-of-best-seller-images {
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 
-.best-seller-image-front,
-.best-seller-image-back {
+.best-seller-image-front {
     width: 250px;
-    position: absolute;
     background-color: rgb(219, 215, 215);
     height: 200px;
     border-radius: 10px 10px 0 0;
     -webkit-animation: ease-in-out;
     transition: 0.7s;
+}
+
+.best-seller-image-back {
+    width: 250px;
+    background-color: rgb(219, 215, 215);
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    -webkit-animation: ease-in-out;
+    transition: 0.7s;
+    position: absolute;
 }
 
 
@@ -102,8 +119,6 @@ background-color: red;
 }
 
 .inside-best-seller {
-    position: absolute;
-    top: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 0 0 10px 10px;
     line-height: 0;
@@ -126,7 +141,8 @@ background-color: red;
     color: rgb(255, 255, 255);
     font-size: large;
 }
-.red-button{
+
+.red-button {
     background-color: red;
     color: white;
 }
@@ -174,44 +190,51 @@ h5 {
     margin-left: 0px;
 }
 
-.visible{
+.visible {
     display: none;
     visibility: hidden;
-   
 }
 
-.container2 {
-    display: flex;
-    gap: 5px;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    height: auto;
-    justify-content: space-around;
-    margin-left:-130px ;
+
+
+
+.change-carousel-button-best-seller-right ,
+.change-carousel-button-best-seller-right1{
     position: absolute;
-    top: 8px;
+    right: 0%;
+    top: 230px;
+    z-index: 100;
+    width: 50px;
+    height: 40px;
+    background-color: aliceblue;
+    color: red;
+    font-size: xx-large;
+    border: none;
+    border-radius: 5px;
+}
+.change-carousel-button-best-seller-left,
+.change-carousel-button-best-seller-left1{
+    position: absolute;
+    left: -250px;
+    top: 230px;
+    z-index: 100;
+    width: 50px;
+    height: 40px;
+    background-color: aliceblue;
+    color: red;
+    font-size: xx-large;
+    border: none;
+    border-radius: 5px;
+    display: none;
 }
 
-
-.change-carousel-button-best-seller{
-position: absolute;
-right: 0%;
-top: 230px;
-z-index: 100;
-width: 50px;
-height: 40px;
-background-color: aliceblue;
-color: red;
-font-size: xx-large;
-border: none;
-border-radius: 5px;
-}
-.change-carousel-button-best-seller:hover{
+.change-carousel-button-best-seller-left,
+.change-carousel-button-best-seller-left1,
+.change-carousel-button-best-seller-right ,
+.change-carousel-button-best-seller-right1:hover {
     cursor: pointer;
-    transition: opacity .15s ease-in-out,visibility .15s ease-in-out,transform .15s ease-in-out;
-    transition-property: opacity, visibility, transform;
-    transition-duration: 0.15s, 0.15s, 0.15s;
-    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
-    transition-delay: 0s, 0s, 0s;
+}
+
+.change-me{
+    left: -250px;
 }
