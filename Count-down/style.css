@@ -1,17 +1,24 @@
   .flash-sale{
-    background-color: yellow;
-    padding: 1rem;
-
+    background-color: #ffc107;
+    font-size: 1.7rem;
   }
-.section-center{
+.section-center-timer{
+  margin-left: 20%;
   display: flex;
   width: 50rem;
-  background-color: yellow;
+  align-items: baseline;
+  justify-content: space-between;
+  background-color: #ffc107;
+  border-radius: 30px;
+}
+.heading-of-ending-in{
+  margin: 0 1rem 0 0;
 }
   .flash-sale-end-format {
     margin-right: 1rem;
     width: 5rem;
-    height: 5rem;
+    height: 1rem;
+    margin: -1.5rem 1rem -1.5rem ;
     display: grid;
     text-align: center;
   }
@@ -20,9 +27,18 @@
     text-transform: uppercase;
     font-size: 0.85rem;
   }
-   h4 {
-    font-size: 2rem;
+   .hours-of-timer {
+    font-size: 1.5rem;
     margin-bottom: 0.25rem;
     letter-spacing: 2px;
+  }
+  .wrapper-of-timer{
+    display: flex;
+    align-items: baseline;
+  }
+  .hours-of-timer-milisecond{
+    background-color: whitesmoke;
+    font-size: xx-large;
+    padding: 1rem;
   }
 
