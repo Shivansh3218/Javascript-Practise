@@ -1,36 +1,28 @@
   .flash-sale{
     background-color: yellow;
-    width: 10rem;
-    height: 2rem;
     padding: 1rem;
 
   }
-
-
-  .deadline {
-    display: flex;
-    border: 1px solid blue;
-    background-color: aqua;
-    height: auto;
-  }
-  .deadline-format {
-    background: white;
+.section-center{
+  display: flex;
+  width: 50rem;
+  background-color: yellow;
+}
+  .flash-sale-end-format {
     margin-right: 1rem;
     width: 5rem;
     height: 5rem;
     display: grid;
     text-align: center;
   }
-  .deadline-format span {
+  .flash-sale-end-format span {
     display: block;
     text-transform: uppercase;
     font-size: 0.85rem;
   }
-  .deadline h4 {
+   h4 {
     font-size: 2rem;
     margin-bottom: 0.25rem;
     letter-spacing: 2px;
   }
-  .cover-of-time{
-    /* background-color: blueviolet; */
-  }
+
