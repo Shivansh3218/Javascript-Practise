@@ -8,3 +8,5 @@ momPromise
 .then((result )=>console.log("Climax" , result))
 .catch((error)=>console.log(error)) ;
 console.log("hello")
+console.log("hello")
+console.log("hello")
