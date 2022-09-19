@@ -7,3 +7,4 @@ let momPromise = new Promise ((resolve, reject)=>{
 momPromise
 .then((result )=>console.log("Climax" , result))
 .catch((error)=>console.log(error)) ;
+console.log("hello")
