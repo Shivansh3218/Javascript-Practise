@@ -5,6 +5,9 @@
     margin-left: 20vw;
     align-items: baseline;
 }
+body{
+    background-color: rgb(255, 247, 247);
+}
 .header{
     justify-content: space-between;
 }
@@ -51,7 +54,6 @@
     flex-wrap: wrap;
     gap: 2vh;
     row-gap: 20vh;
-   
 }
 .main{
     border: 2px solid black;
@@ -59,6 +61,11 @@
     border-radius: 1.5rem;
     width: 20vw;
     height: auto;
+}
+.main:hover{
+    cursor: pointer;
+    translate:10px 20px ;
+    transition: 0.5s;
 }
 .linkOfMeal{
     width: 10vw;
