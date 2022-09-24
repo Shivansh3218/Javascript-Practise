@@ -1,0 +1,94 @@
+.header,.heading{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 20vw;
+    align-items: baseline;
+}
+.header{
+    justify-content: space-between;
+}
+.submit{
+    color: whitesmoke;
+    background-color: red;
+    padding: 0.7rem;
+    border: 0px;
+    border-radius:0.5rem;
+    font-weight: 700;
+    font-size:medium;
+}
+.submit:hover{
+    cursor: pointer;
+    color: red;
+    background-color: whitesmoke;
+    transition: 0.3s;
+}
+.cart{
+}
+.input_box{
+    width: 20rem;
+    height: 2rem;
+    margin-left: 35vw;
+}
+.headingApp{
+    font-size: xx-large;
+    font-family:cursive;
+    text-align: center;
+    color: red;
+    text-align: center;
+    text-transform: capitalize;
+}
+.second_heading{
+    font-family:cursive;
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+}
+
+.container{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    row-gap: 20vh;
+   
+}
+.main{
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    width: 20vw;
+    height: auto;
+}
+.linkOfMeal{
+    width: 10vw;
+}
+.mealImg{
+    width: 20vw;
+    height: 30vh;
+}
+.mealInstructions{
+    width: 50vh;
+    height: 30vh;
+    overflow: scroll;
+}
+.wrapper_of_buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Add_to_cart{
+    color: whitesmoke;
+    background-color: red;
+    padding: 0.7rem;
+    border: 0px;
+    border-radius:0.5rem;
+    font-weight: 700;
+    font-size:medium;
+}
+.Add_to_cart:hover{
+    cursor: pointer;
+    color: red;
+    background-color: whitesmoke;
+    transition: 0.3s;
+}
