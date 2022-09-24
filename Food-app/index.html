@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <input type="text" value="chicken">
+    <div class="header">
+        <div class="heading">
+            <h1 class="headingApp">Pillow </h1>
+            <h1 class="second_heading">Food</h1>
+        </div>
+        <!-- <button oncanplay=""></button> -->
+
+    <div class="cart" aria-hidden="true">cart</div>
+    </div>
+    
+    <input class="input_box" type="text" >
     <button class="submit">submit</button>
-    <div class="container" style="width: 300px;height:300px;"></div>
-    <!-- <div class="main">
-        <div class="left">
-            <h1>${strMeal}</h1>
-            <div class="right">
-                <img src="${strMealthumb}" style="width: 200px;height: 150px;" alt="">
-            </div>
-            <p>${strInstructions}</p>
-            <a href="${stryoutube}">link for full preparation</a>
-        </div> -->
+    <div class="container"></div>
     </div>
 </body>
 </html>
@@ -26,28 +28,68 @@
     let btn = document.querySelector(".submit")
     let input = document.querySelector("input")
     let container = document.querySelector(".container")
+    let items = ["200","125","231","343","543","242","234","756","778","827","563","565","846"]
     btn.addEventListener("click",function(){
+        container.innerHTML=""
  fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input.value}`)
  .then(response=>response.json() )
  .then(data=>{
     console.log(data)
     let recipie = data["meals"]
-    console.log(recipie)
-
     recipie.forEach(element => { 
-        let {strMeal, strMealThumb,strInstructions,strYoutube}= element
+        let {strMeal,strArea,idMeal, strMealThumb,strInstructions,strYoutube}= element
         let html = ` <div class="main">
         <div class="left">
             <h1>${strMeal}</h1>
             <div class="right">
-                <img src="${strMealThumb}" style="width: 200px;height: 150px;" alt="">
+                <img class ="mealImg"  src="${strMealThumb}"  alt="">
             </div>
-            <p>${strInstructions}</p>
-            <a href="${strYoutube}">link for full preparation</a>
+            <div>${strArea}
+                <p>Rs ${items[Math.floor(Math.random()*items.length)]}</p>
+                </div>
+                <div class ="wrapper_of_buttons">
+                    <a class="linkOfMeal" href="${strYoutube}">Preparation link</a>
+            <button onclick = "addtoCart" class ="Add_to_cart" id = "${idMeal}">Order food</button>
+                    </div>
+            
         </div>`
         container.innerHTML += html
     });
 });
  })
+function addtoCart(data){
+console.log(e)
+}
 
+
+
+
+
+(function(){
+ fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input.value}`)
+ .then(response=>response.json() )
+ .then(data=>{
+    console.log(data)
+    let recipie = data["meals"]
+    recipie.forEach(element => { 
+        let {strMeal,strArea,idMeal, strMealThumb,strInstructions,strYoutube}= element
+        let html = ` <div class="main">
+        <div class="left">
+            <h1>${strMeal}</h1>
+            <div class="right">
+                <img class ="mealImg"  src="${strMealThumb}"  alt="">
+            </div>
+            <div>${strArea}
+                <p>Rs ${items[Math.floor(Math.random()*items.length)]}</p>
+                </div>
+                <div class ="wrapper_of_buttons">
+                    <a class="linkOfMeal" href="${strYoutube}">How to make</a>
+            <button onclick = "addtoCart" class ="Add_to_cart" id = "${idMeal}">Order food</button>
+                    </div>
+            
+        </div>`
+        container.innerHTML += html
+    });
+});
+ })()
 </script>
