@@ -7,15 +7,15 @@
 // - Kid 4, they will have 1 + 3 = 4 candies, which is not the greatest among the kids.
 // - Kid 5, they will have 3 + 3 = 6 candies, which is the greatest among the kids.
 
-let candies = [4,2,1,1,2]
+let candies = [1,10,10,3]                                               
 let extraCandies = 1
 let sortedCandies = [...candies]
-candies.sort()
+let candy= candies.sort()
 let arr= []
-let max = candies[candies.length-1]
+let max = candy[candy.length-1]
 for(let i=0;i<candies.length;i++){
+    console.log(candies[i]+extraCandies,max)
     if(sortedCandies[i]+extraCandies>=max){
-        console.log(candies[i]+extraCandies,max)
         arr.push(true)
     }else arr.push(false)
 }
