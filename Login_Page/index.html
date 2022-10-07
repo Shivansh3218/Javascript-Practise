@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="show.html">
+    <input  type="text" id="user" class="username">
+    <input type="password" name="password" id="pass">
+    <button id="btn" onclick="passvalue(e)">submit</button>
+    </form>
+</body>
+<script>
+    let btn = document.querySelector("#btn")
+    let user = document.querySelector("#user")
+    let pass = document.querySelector("#pass")
+
+
+    function passvalue(e) {
+        e.preventDefault()
+        let input = document.querySelector(".username").value
+        localStorage.setItem("username",input )
+        
+    window.location.assign('show.html')
+        // }
+    }
+</script>
+
+</html>
