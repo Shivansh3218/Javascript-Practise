@@ -7,17 +7,17 @@
     <title>Show page</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Hello you need to login first</h1>
    <a href="index.html"> <button onclick="clear()">Logout</button></a>
 </body>
 <script>
 let h1= document.querySelector("h1")
 
-h1.innerText =` Welcome ${ localStorage.getItem("username")
-}`
+h1.innerText =` Welcome ${sessionStorage.getItem("username")}`
 
 function clear(){
-    window.localStorage.clear()
+    sessionStorage.removeItem("username")
+    h1.innerText =`Login First`
 }
 </script>
 </html>

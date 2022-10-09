@@ -8,11 +8,7 @@ var restoreString = function(s, indices) {
     let arr2= []
     let str2=""
     for(let i=0;i<indices.length;i++){
-        let a= indices[i]
-        // console.log(a,s[i])
-        console.log(a,s[i],s[a],i)
-        arr2.push(s[indices[i]])
-        // console.log(arr2)
+       arr2.push(s[indices[i]])
         str2 =arr2.join("")
     }
     return {str2,arr2}

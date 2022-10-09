@@ -9,11 +9,13 @@
 </head>
 
 <body>
-    <form action="show.html">
+    <!-- <form > -->
+        <h1>username</h1>
     <input  type="text" id="user" class="username">
+    <h1>password</h1>
     <input type="password" name="password" id="pass">
-    <button id="btn" onclick="passvalue(e)">submit</button>
-    </form>
+    <button id="btn" onclick="passvalue()">Log-in</button>
+    <!-- </form> -->
 </body>
 <script>
     let btn = document.querySelector("#btn")
@@ -21,13 +23,12 @@
     let pass = document.querySelector("#pass")
 
 
-    function passvalue(e) {
-        e.preventDefault()
+    function passvalue() {
+        // e.preventDefault()
         let input = document.querySelector(".username").value
-        localStorage.setItem("username",input )
-        
-    window.location.assign('show.html')
-        // }
+        sessionStorage.setItem("username",input)
+        console.log(input)
+        window.location.assign("show.html")
     }
 </script>
 
