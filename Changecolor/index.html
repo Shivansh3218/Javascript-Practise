@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            /* background-color: aqua; */
+        }
+        body{
+            display: grid;
+            grid-template-columns:   100px 100px 100px 100px 100px;
+            gap :20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+</body>
+</html>
+<script>
+    console.log("hello")
+    let a=document.querySelectorAll(".wrapper")
+//   for(let i=0;i<a.length;i++){
+//     a[i].style.backgroundColor = "blue"
+//   }
+a.forEach((i)=>{
+    i.style.backgroundColor = "blue"
+})
+</script>
