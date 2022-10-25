@@ -1,24 +1,24 @@
-let nums = [1, 2, 3, 4, 6]
+let nums = [1, 2, 3, 5, 6]
 let target = 5
 let left = 0
 let right = nums.length - 1
+function number(nums,target){
 while (left < right) {
     if (target === nums[left]) {
-        console.log(left, "is left")
+      return left
     }
     else if (target === nums[right]) {
-        console.log(right, "is right")
+        return right
     }
     left++
     right--
 }
-while (nums.includes(target)) {
-    console.log("hello")
-    if (left + 1 === target && right - 1 === target) {
-        nums.splice(left, 0, target)
-    }
-    left++
-    right--
+// if(left===right){
+//     if(target<=nums[left]){
+//         return left
+//     }
+//     else left+1
+// }
 }
 
-console.log(nums)
+console.log(number([1, 2, 3,5, 6],5))
