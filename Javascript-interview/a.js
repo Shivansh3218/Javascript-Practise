@@ -7,3 +7,4 @@ function Vehicle(model, color, year, country) {
   this.year = year;
   this.country = country;
 }
+//Output => Vehicle{model:honda, color:white, year:2010,country:UK} same for let and const
