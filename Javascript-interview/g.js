@@ -25,9 +25,9 @@
 // deepcopy[1].list[0]="sda"
 // console.log(deepcopy)
 
-let num = 15;
-function names(){
-return num = 10;
-}
-console.log(names())
-console.log(num)
+// let num = 15;
+// function names(){
+// return num = 10;
+// }
+// console.log(names())
+// console.log(num)
