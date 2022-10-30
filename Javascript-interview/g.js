@@ -18,9 +18,16 @@
 
 // },[])
 // console.log(isNaN({}))
+
+
+// let lists = ["noodles", { list: ["eggs", "flour", "water"] }];
+// let deepcopy = JSON.parse(JSON.stringify(lists));
+// deepcopy[1].list[0]="sda"
+// console.log(deepcopy)
+
 let num = 15;
-function names(num){
+function names(){
 return num = 10;
 }
-names()
+console.log(names())
 console.log(num)
