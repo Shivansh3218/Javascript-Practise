@@ -1,0 +1,16 @@
+// async function abc() {
+//    let b = await new Promise((res) => {
+//         setTimeout(() => { res("hello") , 2000 })
+//     })
+//      .then((res)=>console.log(res))
+//     return b
+// }
+
+let b = new Promise((res) => {
+    res("hello")
+})
+ .then((r)=>{setTimeout(() => { console.log(r), 2000 })})
+// console.log(abc())
+console.log("ehello world")
+console.log(b)
+console.log("ka")
