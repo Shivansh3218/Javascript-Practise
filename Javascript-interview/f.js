@@ -15,7 +15,7 @@
 // console.log("ka")
 
 async function wait() {
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 3000));
     return 10;
   }
   function f() {
@@ -23,4 +23,10 @@ async function wait() {
     wait().then(result => console.log(result));
   }
   f();
-  console.log("jello")
+//   console.log("jello")
+setTimeout(()=>{
+    console.log("setime")
+},2000)
+
+let promise = new Promise((res)=>res("last"))
+.then((r)=>{setTimeout(()=>console.log(r),3000)})
