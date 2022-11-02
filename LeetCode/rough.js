@@ -5,3 +5,6 @@ let nums = [-1,-2,-5]
 
 nums.splice(4,0,1)
 console.log(nums)
+
+let arr = [1]
+console.log(arr.length)
