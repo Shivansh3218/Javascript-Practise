@@ -14,19 +14,19 @@
 // console.log(abc().then((r)=>setTimeout(()=>{console.log(r)})))
 // console.log("ka")
 
-async function wait() {
-    await new Promise(resolve => setTimeout(resolve, 3000));
-    return 10;
+
+  let promise1 =  new Promise(resolve =>  resolve("first"))
+  .then((res)=>console.log(res))
+  
+  function abc(){
+    return function bcd(){
+      setTimeout(()=>{console.log("Second")},2000)
+    }
   }
-  function f() {
-    // shows 10 after 1 second
-    wait().then(result => console.log(result));
-  }
-  f();
-//   console.log("jello")
-setTimeout(()=>{
-    console.log("setime")
-},2000)
+  abc()()
 
 let promise = new Promise((res)=>res("last"))
-.then((r)=>{setTimeout(()=>console.log(r),3000)})
+.then((r)=>{setTimeout(()=>console.log(r),2000)})
+
+
+// setTimeout(()=>console.log("Last"),2000)
