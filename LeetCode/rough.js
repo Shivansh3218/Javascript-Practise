@@ -8,3 +8,12 @@ let nums = [-1,-2,-5]
 
 // let arr = [1]
 // console.log(arr.length)
+// let person ={
+//     name: "shiv",
+//     age:23
+// }
+// console.log([1,2,3]+[1,2,3]
+console.log(hoist)
+hoist =3
+
+// var hoist
