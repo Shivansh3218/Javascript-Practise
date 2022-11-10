@@ -13,7 +13,16 @@ let nums = [-1,-2,-5]
 //     age:23
 // }
 // console.log([1,2,3]+[1,2,3]
-console.log(hoist)
-hoist =3
+// console.log(hoist)
+// hoist =3
 
 // var hoist
+
+let arr = [[1,2],[3,4],[5,6]]
+let obj = arr.map(function(x){
+    return {
+        time:x[0],
+        price:x[1]
+    }
+})
+console.log(obj)
