@@ -1,6 +1,6 @@
 // isNaN("hello");
 console.log(isNaN("s"))
-console.log(Number.isNaN(0/0))
+// console.log(Number.isNaN(0/0))
 
 // for (let key in arr) {
 //   console.log(key);
@@ -31,3 +31,9 @@ console.log(Number.isNaN(0/0))
 // }
 // console.log(names())
 // console.log(num)
+
+
+let arr = [1,2,3,4,5,6,7]
+
+let [a,b,...c] =arr
+console.log(a,b,c)
