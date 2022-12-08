@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="name_input">
+    <label for="friend_of">Friend of </label>
+    <select id="friend_select">
+        <option value="Ayushi">Ayushi</option>
+        <option value="Ayushi">Ayushi</option>
+        <option value="Ayushi">Ayushi</option>
+    </select>
+    <select id="relation">
+        <option value="friend">Friend</option>
+    </select>
+
+    <button class="save_btn">Save</button>
+
+    <div class="data_container">
+    </div>
+
+    <div class="storage_data" style="margin-top: 3rem;">
+        <button class="storage_data__show_btn">Show Data</button>
+        <div class="chain_data">
+
+        </div>
+    </div>
+</body>
+
+<script>
+    let inputName = document.querySelector("#name_input")
+    let friendOf = document.querySelector("#friend_select")
+    let saveBtn = document.querySelector(".save_btn")
+    let dataContainer = document.querySelector(".data_container")
+    let chainData = document.querySelector(".chain_data")
+    let showBtn = document.querySelector(".storage_data__show_btn")
+
+    let arr = []
+
+    const showData = () => {
+        let html = arr.map((item) => {
+            console.log(item.name)
+            return `
+            <div id=${item.name}>  
+            <span>${item.name}</span> is friend of <span>${item.friend}</span>
+      </div>`
+        })
+        dataContainer.innerHTML = html
+        html = ""
+        inputName.value = ""
+    }
+
+    const addPeople = (e) => {
+        if (inputName.value.length > 0) {
+            let obj = {
+                name: inputName.value,
+                friend: friendOf.value,
+                relation: "friend "
+            }
+            arr = [...arr, obj]
+            let storedUser = JSON.parse(localStorage.getItem("user")) ?? [];
+            storedUser.push(...arr);
+            localStorage.setItem("user",JSON.stringify(storedUser))
+        }
+
+        showData()
+    }
+    const getLocalData = ()=>{
+        let localData =JSON.parse(localStorage.getItem("user"))
+        // console.log(localData)
+      const html= localData.map((item)=>{
+        return ` <div id=${item.name}>  
+            <span>${item.name}</span> is friend of <span>${item.friend}</span> `
+        })
+        chainData.innerHTML= html
+    }
+    saveBtn.addEventListener("click", addPeople)
+    showBtn.addEventListener("click", getLocalData)
+</script>
+
+</html>
