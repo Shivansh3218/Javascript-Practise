@@ -1,27 +1,25 @@
-//Closure
+//Class is a syntactic sugar of a function and we can create multiple objects using class. It is also a user defined blueprint from which objects are created.
 
-function prints(){
-    let count = 0
-    return function (){
-        count++
-        if(count%3==0) {console.log("printing")}
+class Student{
+    constructor(name, age){
+        this.name = name,
+        this.age = age
+    }
+
+    getData(){
+        console.log(`${this.name} is of ${this.age} years`)
     }
 }
-let printing = prints()
-printing()
-printing()
-printing()
 
-//Using global variable
-
-
-var count=0
-function pass(){
-   count++
-   if(count%3==0){
-    console.log("third")
-   }
+class Player extends Student{
+    constructor(name,age,place){
+        super(name,age)
+        this.place= place
+    }
+    getData(){
+        console.log(`${this.name} is of ${this.age} years and is from ${this.place}`)
+    }
 }
-pass()
-pass()
-pass()
+let obj = new Player("Shivansh", 23, "Uttrakhand")
+
+obj.getData()
