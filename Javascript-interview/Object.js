@@ -13,6 +13,7 @@ function obj(name,age,gender){
         this.age = age
         this.gender= gender
 }
+
 let obj1 = new obj("Shivansh", 23, "male")
 console.log(obj1)
 

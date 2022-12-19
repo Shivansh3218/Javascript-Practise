@@ -19,11 +19,8 @@ const memoized = (fun) => {
         if (n in cache) {
             console.log("cache")
             return cache[n]
-
         }
         else {
-            
-    console.log(cache)
             let result = fun(n)
             return result
         }
