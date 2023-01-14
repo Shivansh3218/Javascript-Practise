@@ -15,18 +15,28 @@
 // console.log("ka")
 
 
-  let promise1 =  new Promise(resolve =>  resolve("first"))
-  .then((res)=>console.log(res))
+//   let promise1 =  new Promise(resolve =>  resolve("first"))
+//   .then((res)=>console.log(res))
   
-  function abc(){
-    return function bcd(){
-      setTimeout(()=>{console.log("Second")},2000)
-    }
-  }
-  abc()()
+//   function abc(){
+//     return function bcd(){
+//       setTimeout(()=>{console.log("Second")},2000)
+//     }
+//   }
+//   abc()()
 
-let promise = new Promise((res)=>res("last"))
-.then((r)=>{setTimeout(()=>console.log(r),2000)})
+// let promise = new Promise((res)=>res("last"))
+// .then((r)=>{setTimeout(()=>console.log(r),2000)})
 
 
 // setTimeout(()=>console.log("Last"),2000)
+
+
+// useEffect(()=>{
+
+
+// },[])
+let newarr = []
+for(let i =arr.length-1;i>0;i--){
+  newarr.push(i)
+}

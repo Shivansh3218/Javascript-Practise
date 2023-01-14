@@ -1,4 +1,4 @@
-let arr = [1, [1, 2], [1,2,3,4,[5,6,7,[1,2,34,5]]],3, [[4], 5, 6]]
+let arr = [1, [1, 2], [1, 2, 3, 4, [5, 6, 7, [1, 2, 34, 5]]], 3, [[4], 5, 6]]
 
 function flat(arr) {
     let flattendArr = [];
@@ -6,9 +6,22 @@ function flat(arr) {
         if (Array.isArray(arr[i])) {
             flattendArr = flattendArr.concat(flat(arr[i]))
         }
-        else flattendArr.push(arr[i]
-        )
+        else flattendArr.push(arr[i])
     }
     return flattendArr
 }
 console.log(flat(arr))
+
+
+
+
+
+// function sum(a) {
+//     return function (b) {
+        
+//     if (!b) return a
+//         return sum(a+b)
+//     }
+// }
+
+// console.log(sum(1)(2)(3)())
